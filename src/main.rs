@@ -62,7 +62,6 @@ fn render_mandelbrot(escape_vals: Vec<Vec<usize>>) {
     let mut line = String::with_capacity(row.len());
 
     for column in row {
-      //println!("{}", column);
       let val = match column {
         0..=2 => ' ',
         3..=5 => '.',
@@ -74,8 +73,6 @@ fn render_mandelbrot(escape_vals: Vec<Vec<usize>>) {
         401..=700 => '#',
         _ => '%',
       };
-
-      //println!("{}", val);
 
       line.push(val);
     }
